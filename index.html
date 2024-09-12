@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testpack</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/img/footer-img.ico" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="btn" id="btn-left">←</div>
+      <div class="carousel-wrapper" id="carousel-wrapper">
+        <div class="carousel" id="carousel">
+          <div class="item" id="item-left">
+            <div class="card">1</div>
+            <div class="card">1</div>
+            <div class="card">1</div>
+          </div>
+          <div class="item" id="item-active">
+            <div class="card">2</div>
+            <div class="card">2</div>
+            <div class="card">2</div>
+          </div>
+          <div class="item" id="item-right">
+            <div class="card">3</div>
+            <div class="card">3</div>
+            <div class="card">3</div>
+          </div>
+        </div>
+      </div>
+      <div class="btn" id="btn-right">→</div>
+    </div>
+
+    <div class="slider" id="slider">
+      <button class="round-button" id="button-left">
+        <svg
+          width="14"
+          height="6"
+          viewBox="0 0 14 6"
+          fill="#292929"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#292929" />
+        </svg>
+      </button>
+      <div class="card-inner">
+        <div class="pets-carousel" id="pets-carousel">
+            <div class="pets-block" id="pets-left">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+
+            <div class="pets-block" id="pets-active">
+                <div class="card" id="slider-pet1">
+                    <img src="http://127.0.0.1:5500/Task/RollingScopesSchool/Shelter1/iamjohnlevy-JSFEPRESCHOOL2024Q2/shelter/assets/img/pet-Jennifer.png" alt="pet-Katrine-img" />
+                    <p>Katrine</p>
+                    <button class="button_primary">Learn more</button>
+                  </div>
+        
+                  <div class="card center" id="slider-pet2">
+                    <img src="http://127.0.0.1:5500/Task/RollingScopesSchool/Shelter1/iamjohnlevy-JSFEPRESCHOOL2024Q2/shelter/assets/img/pet-Jennifer.png" alt="pet-Jennifer-img" />
+                    <p>Jennifer</p>
+                    <button class="button_primary">Learn more</button>
+                  </div>
+        
+                  <div class="card" id="slider-pet3">
+                    <img src="http://127.0.0.1:5500/Task/RollingScopesSchool/Shelter1/iamjohnlevy-JSFEPRESCHOOL2024Q2/shelter/assets/img/pet-Jennifer.png" alt="pet-Woody-img" />
+                    <p>Woody</p>
+                    <button class="button_primary">Learn more</button>
+                  </div>
+            </div>
+
+            <div class="pets-block" id="pets-right">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+          
+        </div>
+      </div>
+      <button class="round-button" id="button-right">
+        <svg
+          width="14"
+          height="6"
+          viewBox="0 0 14 6"
+          fill="#292929"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 4V2L11 2V0L14 3L11 6V4L0 4Z" fill="#292929" />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>

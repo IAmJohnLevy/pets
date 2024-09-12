@@ -1,0 +1,186 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    cursor: pointer;
+    font-size: 100px;
+    width: 100px;
+}
+
+.item, .carousel, .card {
+    display: flex;
+}
+
+.carousel-wrapper {
+    width: 640px;
+    margin: 0 20px;
+    overflow: hidden;
+}
+
+/* .card {
+    width: 200px;
+    height: 200px;
+    background: red;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    cursor: pointer;
+} */
+
+/* .card.activated {
+    background: #ccc;
+} */
+
+.item:first-child .card {
+    background: lawngreen;
+}
+
+.item:last-child .card {
+    background: lightskyblue;
+}
+
+.item {
+    gap: 20px;
+}
+
+.carousel {
+    position: relative;
+    left: -640px;
+}
+
+@keyframes move-right {
+    from {left: -640px;}
+    to {left: -1280px;}
+}
+
+.transition-right {
+    animation-name: move-right;
+    animation-duration: 1s;
+}
+
+@keyframes move-left {
+    from {left: -640px;}
+    to {left: 0px;}
+}
+
+.transition-left {
+    animation-name: move-left;
+    animation-duration: 1s;
+}
+
+/* @keyframes pets-move-right {
+    from {left: 0px;}
+    to {left: -100%;}
+}
+
+.transition1-right {
+    animation-name: pets-move-right;
+    animation-duration: 1s;
+}
+
+@keyframes pets-move-left {
+    from {left: -100%;}
+    to {left: 0px;}
+} */
+
+/* .transition1-left {
+    animation-name: pets-move-left;
+    animation-duration: 1s;
+} */
+
+.slider {
+    display: flex;
+    align-items: center;
+}
+
+.round-button {
+    cursor: pointer;
+    font-size: 100px;
+    width: 100px;
+}
+
+.pets-block, .pets-carousel, .card {
+    display: flex;
+}
+
+.card-inner {
+    width: 640px;
+    margin: 0 20px;
+    overflow: hidden;
+    height: 400px;
+}
+
+.card {
+    width: 200px;
+    height: 400px;
+    background: rgb(189, 153, 153);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+.card button {
+    border-radius: 100px;
+    margin-bottom: 30px;
+    width: 187px;
+    height: 52px;
+    border: 2px solid #f1cdb3;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22.1px;
+    letter-spacing: 0.06em;
+    background-color: #fafafa;
+  }
+
+/* .card.activated {
+    background: #ccc;
+} */
+
+.pets-block:first-child .card {
+    background: lawngreen;
+}
+
+.pets-block:last-child .card {
+    background: lightskyblue;
+}
+
+.pets-block {
+    gap: 20px;
+    width: 640px;
+    height: 200px;
+}
+
+img {
+    width: 200px;
+}
+
+.pets-carousel {
+    position: relative;
+    left: -100%;
+}
+
+@keyframes pets-move-right {
+    from {left: -100%;}
+    to {left: -200%;}
+}
+
+.transition1-right {
+    animation-name: pets-move-right;
+    animation-duration: 1s;
+}
+
+@keyframes pets-move-left {
+    from {left: -100%;}
+    to {left: 0px;}
+}
+
+.transition1-left {
+    animation-name: pets-move-left;
+    animation-duration: 1s;
+}
